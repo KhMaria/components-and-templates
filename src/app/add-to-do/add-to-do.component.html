@@ -1,0 +1,7 @@
+<div class="add-todo">
+  <div class="add-todo__task">Task</div>
+  <input type="text" placeholder="Enter Task..." [(ngModel)]="newToDoTask"/>
+  <div class="add-todo__description">Description</div>
+  <input type="text" placeholder="Enter description..." [(ngModel)]="newToDoDescription"/>
+  <button class="btn-add" (click)="addNewToDo()">Add</button>
+</div>

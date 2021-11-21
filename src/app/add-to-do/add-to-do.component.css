@@ -1,0 +1,17 @@
+.add-todo {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.add-todo__task {
+  margin-right: 5px;
+}
+
+.add-todo__description {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.btn-add {
+  margin-left: 5px;
+}

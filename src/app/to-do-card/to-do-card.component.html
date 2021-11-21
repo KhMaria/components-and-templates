@@ -1,0 +1,9 @@
+<div class="todo-card">
+  <div class="todo-card__info">
+    <h4>{{toDo.task | title }}</h4>
+    <p bold>{{toDo?.description}}</p>
+<!--    <ng-content></ng-content>-->
+    <button type="button" (click)="onDone()">Done</button>
+<!--    <ng-template [ngTemplateOutlet]="templateFromParent"></ng-template>-->
+  </div>
+</div>

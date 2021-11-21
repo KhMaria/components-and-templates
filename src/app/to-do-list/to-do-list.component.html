@@ -1,0 +1,17 @@
+<h1 [ngStyle]="{'font-size':'14px', 'font-family':'Segoe Print'}">{{title}}</h1>
+
+<add-to-do (newToDoCreated)="addNewToDo($event)"></add-to-do>
+
+<div *ngIf="toDos.length else emptyTemplate" class="cards">
+  <to-do-card *ngFor="let item of toDos" [toDo]="item" (done)="onDone($event)" [templateFromParent]="templateFromParent">
+    <p>Hi from content!</p>
+  </to-do-card>
+</div>
+
+<ng-template #emptyTemplate>
+  <p>Empty list</p>
+</ng-template>
+
+<ng-template #templateFromParent>
+  <div>Hi from parent</div>
+</ng-template>

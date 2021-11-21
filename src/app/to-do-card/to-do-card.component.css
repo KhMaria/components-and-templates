@@ -1,0 +1,9 @@
+.todo-card {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  background-color: white;
+  padding: 10px 16px;
+  width: 500px;
+  margin-bottom: 10px;
+}
